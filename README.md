@@ -3,7 +3,7 @@ My name is [Joseph Zurner](https://www.linkedin.com/in/joe-zurner/) and I am a c
 
 
 # Section 1: The Basics
-Before taking on any certifications, I want to get a strong background on some universal topics. These include the basics of networking, penetration testing, and operating systems (namely Windows and Linux).
+Before taking on any certifications, I want to get a strong background on some universal topics. These include the basics of networking, penetration testing, tools, and operating systems (namely Windows and Linux).
 
 ## 1.1: Resources
 - [Practice site 1 (TryHackMe)](https://tryhackme.com/hacktivities)
@@ -12,7 +12,29 @@ Before taking on any certifications, I want to get a strong background on some u
 - [Practice site 4 (OverTheWire)](https://overthewire.org/wargames/)
 
 ## 1.2: Networks
-
+- [ ] IP addresses
+- [ ] MAC addresses
+- [ ] Requests and responses
+- [ ] OSI model
+- [ ] TCP
+- [ ] UDP
+- [ ] Packets
+- [ ] Encapsulation and de-encapsulation
+- [ ] Firewalls
+- [ ] LANs and topologies
+- [ ] ARP
+- [ ] DHCP
+- [ ] Port forwarding
+- [ ] Hardware (router, switch, etc)
+- [ ] SMB
+- [ ] URLs
+- [ ] DNS
+- [ ] HTTP and HTTPS
+- [ ] Proxy
+- [ ] VPNs
+- [ ] Web servers
+- [ ] Websites
+- [ ] Cookies
 
 # Section 2: The eJPT Certification
 The eLearnSecurity Junior Penetration Tester (eJPT) is a certification test graded on performance in penetration tests based on real-world scenarios. It is a more practical alternative to tests such as the CEH or Security+, and I chose this as a starting point because of its hands-on format. For more information, visit the [official website](https://elearnsecurity.com/product/ejpt-certification/).
