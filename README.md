@@ -1,5 +1,7 @@
+Connect with me on [LinkedIn](https://www.linkedin.com/in/joe-zurner/)!
+
 # Introduction
-My name is [Joseph Zurner](https://www.linkedin.com/in/joe-zurner/) and I am a cybersecurity student at Harford Community College. I am planning on switching to a four-year university in the fall of 2022, but until then, I will be creating some groundwork to familiarize myself with the field. As of writing this introduction I have some knowledge of cybersecurity, mainly from websites such as TryHackMe and a couple classes I have taken, but my goal is to get ahead and earn some certifications before graduation. The goal of this checklist is to organize my learning path, so I know where I stand as well as giving readers a way to follow along. In addition, publicly committing to this is a good way to maintain progress. My goal is to learn three or more concepts each week but this may change as I am currently taking 19 credits and don't have too much free time.
+My name is Joseph Zurner and I am a cybersecurity student at Harford Community College. I am planning on switching to a four-year university in the fall of 2022, but until then, I will be creating some groundwork to familiarize myself with the field. As of writing this introduction I have some knowledge of cybersecurity, mainly from websites such as TryHackMe and a couple classes I have taken, but my goal is to get ahead and earn some certifications before graduation. The goal of this checklist is to organize my learning path, so I know where I stand as well as giving readers a way to follow along. In addition, publicly committing to this is a good way to maintain progress. My goal is to learn three or more concepts each week but this may change as I am currently taking 19 credits and don't have too much free time.
 
 
 # Section 1: The Basics
@@ -12,7 +14,7 @@ Before taking on any certifications, I want to get a strong background on some u
 - [Practice site 4 (OverTheWire)](https://overthewire.org/wargames/)
 
 ## 1.2: Networks
-I *think* I gathered all the major components and put them in a logical order:
+I *think* I gathered all the major components and put them in a logical order. Some of it leaks into other sections, but its all very interconnected:
 - [ ] IP addresses (IPv4 and IPv6)
 - [ ] MAC addresses
 - [ ] DHCP
@@ -30,12 +32,19 @@ I *think* I gathered all the major components and put them in a logical order:
 - [ ] Firewalls
 - [ ] The internet
 - [ ] Web servers and websites
+- [ ] Web browsers
 - [ ] Cookies
 - [ ] URLs and DNS
 - [ ] HTTP and HTTPS
 - [ ] Proxy
 - [ ] VPNs
 - [ ] Port forwarding
+
+Putting it all together:
+- [ ] How does a new device join a network?
+- [ ] How do devices communicate on LANs?
+- [ ] How do devices communicate on the internet?
+- [ ] How are different types of data sent and loaded on your web browser?
 
 # Section 2: The eJPT Certification
 The eLearnSecurity Junior Penetration Tester (eJPT) is a certification test graded on performance in penetration tests based on real-world scenarios. It is a more practical alternative to tests such as the CEH or Security+, and I chose this as a starting point because of its hands-on format. For more information, visit the [official website](https://elearnsecurity.com/product/ejpt-certification/).
