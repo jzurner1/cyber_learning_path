@@ -3,7 +3,7 @@ Note: This is a work in progress
 Connect with me on [LinkedIn](https://www.linkedin.com/in/joe-zurner/)!
 
 # Introduction
-My name is Joseph Zurner and I am a cybersecurity student at Harford Community College. I am planning on switching to a four-year university in the fall of 2022, but until then, I will be creating some groundwork to familiarize myself with the field. As of writing this introduction I have some knowledge of cybersecurity, mainly from websites such as TryHackMe and a couple classes I have taken, but my goal is to get ahead and earn some certifications before graduation. This checklist was made to organize my learning path so I know where I stand as well as giving readers a way to follow along. I plan to learn three or more concepts each week but this may change as I am currently taking 19 credits and don't have too much free time.
+My name is Joseph Zurner and I am a cybersecurity student at Harford Community College. I am planning on switching to a four-year university in the fall of 2022, but until then, I will be creating some groundwork to familiarize myself with the field. As of writing this introduction I have some knowledge of cybersecurity, mainly from websites such as TryHackMe and a couple classes I have taken, but my goal is to get ahead and earn some certifications before graduation. This checklist was made to organize my learning path so I know where I stand as well as giving readers a way to follow along. I plan to learn five or more concepts each week but this may change as I am currently busy with college.
 
 
 
@@ -67,7 +67,8 @@ Optional topics:
 
 ## 1.3 Operating Systems: Linux
 This will cover commands built into Linux; applications like Wireshark will come later. Many of these are easy enough to cover multiple per day.
-- [ ] File system
+
+- [ ] File system commands
   - [ ] pwd
   - [ ] ls
   - [ ] cd
@@ -83,13 +84,16 @@ This will cover commands built into Linux; applications like Wireshark will come
   - [ ] sort
   - [ ] grep
   - [ ] locate
-- [ ] Users and permissions
-  - [ ] su/sudo
+  - [ ] find
+  - [ ] file
+- [ ] Users and permission commands
+  - [ ] su
+  - [ ] sudo
   - [ ] useradd
   - [ ] passwd
   - [ ] chmod
   - [ ] chown
-- [ ] System information
+- [ ] System information commands
   - [ ] whoami
   - [ ] date
   - [ ] uptime
@@ -100,14 +104,15 @@ This will cover commands built into Linux; applications like Wireshark will come
   - [ ] du
   - [ ] df
   - [ ] ps/ps aux
+  - [ ] top
   - [ ] kill/killall
-- [ ] Other basics
+- [ ] Other basic commands
   - [ ] man
   - [ ] history
   - [ ] clear
   - [ ] apt -get
   - [ ] reboot
-- [ ] Networking
+- [ ] Networking commands
   - [ ] ping
   - [ ] ip addr
   - [ ] whois (domain)
@@ -119,9 +124,33 @@ This will cover commands built into Linux; applications like Wireshark will come
   - [ ] ip address add
   - [ ] ifconfig
   - [ ] netstat
+- [ ] Miscellaneous
+  - [ ] Shell operators
+  - [ ] Text editors (VIM, nano)
 
-
-
+## 1.4 Common tools
+Common add-ons for penetration testing. These will probably take longer than a day.
+- [ ] Burp Suite
+  - [ ] Burp Intruder
+  - [ ] Burp Proxy
+  - [ ] Burp Repeater
+  - [ ] Burp Target
+- [ ] Metasploit
+- [ ] Nmap
+  - [ ] Nmap automation
+- [ ] OpenVPN
+- [ ] Nessus
+- [ ] fping
+- [ ] Dirt Buster
+- [ ] John the Ripper
+- [ ] hashcat
+- [ ] Hydra
+- [ ] Wireshark
+- [ ] Sublist3r
+- [ ] Netcat
+- [ ] enum4linux
+- [ ] samrump
+- [ ] smbclient
 
 
 
