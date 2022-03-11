@@ -3,7 +3,7 @@ My name is [Joseph Zurner](https://www.linkedin.com/in/joe-zurner/) and I am a c
 
 
 # Section 1: The Basics
-Before taking on any certifications, I want to get a strong background on some universal topics. These include the basics of networking, penetration testing, tools, and operating systems (namely Windows and Linux).
+Before taking on any certifications, I want to get a strong background on some universal topics. These include the basics of networking, penetration testing, tools, and operating systems (namely Windows and Linux). I am familiar with most of these topics, but I want to get a deeper understanding of them.
 
 ## 1.1: Resources
 - [Practice site 1 (TryHackMe)](https://tryhackme.com/hacktivities)
@@ -12,29 +12,30 @@ Before taking on any certifications, I want to get a strong background on some u
 - [Practice site 4 (OverTheWire)](https://overthewire.org/wargames/)
 
 ## 1.2: Networks
-- [ ] IP addresses
+I *think* I gathered all the major components and put them in a logical order:
+- [ ] IP addresses (IPv4 and IPv6)
 - [ ] MAC addresses
-- [ ] Requests and responses
+- [ ] DHCP
+- [ ] ARP
+- [ ] LANs and topologies
+- [ ] Packets
+- [ ] SMB
 - [ ] OSI model
+- [ ] Encapsulation and de-encapsulation
+- [ ] Data vs segments/datagrams vs packets vs frames vs bits
 - [ ] TCP
 - [ ] UDP
-- [ ] Packets
-- [ ] Encapsulation and de-encapsulation
-- [ ] Firewalls
-- [ ] LANs and topologies
-- [ ] ARP
-- [ ] DHCP
-- [ ] Port forwarding
 - [ ] Hardware (router, switch, etc)
-- [ ] SMB
-- [ ] URLs
-- [ ] DNS
+- [ ] Requests and responses
+- [ ] Firewalls
+- [ ] The internet
+- [ ] Web servers and websites
+- [ ] Cookies
+- [ ] URLs and DNS
 - [ ] HTTP and HTTPS
 - [ ] Proxy
 - [ ] VPNs
-- [ ] Web servers
-- [ ] Websites
-- [ ] Cookies
+- [ ] Port forwarding
 
 # Section 2: The eJPT Certification
 The eLearnSecurity Junior Penetration Tester (eJPT) is a certification test graded on performance in penetration tests based on real-world scenarios. It is a more practical alternative to tests such as the CEH or Security+, and I chose this as a starting point because of its hands-on format. For more information, visit the [official website](https://elearnsecurity.com/product/ejpt-certification/).
