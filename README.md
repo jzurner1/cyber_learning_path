@@ -60,6 +60,10 @@ Putting it all together:
 - [ ] How do devices communicate on the internet?
 - [ ] How are different types of data sent and loaded on your web browser?
 
+Optional topics:
+- [ ] Subnet masks
+- [ ] Network classes
+
 
 ## 1.3 Operating Systems: Linux
 This will cover commands built into Linux; applications like Wireshark will come later. Many of these are easy enough to cover multiple per day.
