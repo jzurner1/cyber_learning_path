@@ -25,7 +25,7 @@ Before taking on any certifications, I want to get a strong background on some u
 
 
 ## 1.2 Networks
-I *think* I gathered all the major components and put them in a logical order. Some of it leaks into other sections, but its all very interconnected:
+I *think* I gathered all the major components and put them in a logical order. Some of it leaks into other sections, but I think its good enough:
 - [ ] IP addresses (IPv4 and IPv6)
 - [ ] MAC addresses
 - [ ] DHCP
