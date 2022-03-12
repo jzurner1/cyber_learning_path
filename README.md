@@ -33,26 +33,31 @@ I *think* I gathered all the major components and put them in a logical order. S
 - [ ] LANs and topologies
 - [ ] Packets
 - [ ] SMB
-- [ ] OSI model
+- [ ] OSI model (overview)
+- [ ] Spanning Tree Protocol
 - [ ] Encapsulation and de-encapsulation
 - [ ] Data vs segments/datagrams vs packets vs frames vs bits
 - [ ] TCP
 - [ ] UDP
 - [ ] Hardware (router, switch, etc)
-- [ ] Physical networking (OSI model 1)
+- [ ] Physical networking (OSI model 1) (UTP, STP, Coaxial, Fiber Optic Cables)
 - [ ] Requests and responses
 - [ ] Firewalls
+- [ ] IDS and IPS
+- [ ] Network Address Translation
 - [ ] The internet
 - [ ] Web servers and websites
 - [ ] Web browsers
 - [ ] Cookies
 - [ ] URLs and DNS
 - [ ] HTTP and HTTPS
-- [ ] Routing protocols (BGP, RIP, OSPF)
+- [ ] RIP Routing protocol
 - [ ] Proxy
 - [ ] VPNs
 - [ ] Port forwarding
 - [ ] VLANs and tagging
+- [ ] Subnetting
+- [ ] Supernetting
 
 Putting it all together:
 - [ ] How does a new device join a network?
