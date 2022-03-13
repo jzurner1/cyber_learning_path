@@ -30,15 +30,24 @@ I *think* I gathered all the major components and put them in a logical order. A
 - [ ] MAC addresses
 - [ ] DHCP
 - [ ] ARP
-- [ ] LANs and topologies
+- [ ] LAN
+- [ ] Network topologies
 - [ ] Packets
 - [ ] SMB
 - [ ] OSI model (overview)
+  - [ ] Application layer
+  - [ ] Presentation layer
+  - [ ] Session layer
+  - [ ] Transport layer
+  - [ ] Network layer
+  - [ ] Data link layer
+  - [ ] Physical layer
 - [ ] Spanning Tree Protocol
 - [ ] Encapsulation and de-encapsulation
 - [ ] Data vs segments/datagrams vs packets vs frames vs bits
 - [ ] TCP
 - [ ] UDP
+- [ ] Other communication protocols
 - [ ] Hardware (router, switch, etc)
 - [ ] Physical networking (OSI model 1) (UTP, STP, Coaxial, Fiber Optic Cables)
 - [ ] Requests and responses
@@ -156,8 +165,6 @@ Common add-ons for penetration testing. These will probably take longer than a d
 - [ ] enum4linux
 - [ ] samrump
 - [ ] smbclient
-
-
 
 
 
