@@ -25,7 +25,7 @@ Before taking on any certifications, I want to get a strong background on some u
 
 
 ## 1.2 Networks
-I *think* I gathered all the major components and put them in a logical order. Some of it leaks into other sections, but I think its good enough:
+I *think* I gathered all the major components and put them in a logical order. A lot of these will take about a day each, some more and some less:
 - [ ] IP addresses (IPv4 and IPv6)
 - [ ] MAC addresses
 - [ ] DHCP
@@ -71,7 +71,7 @@ Optional topics:
 
 
 ## 1.3 Operating Systems: Linux
-This will cover commands built into Linux; applications like Wireshark will come later. Many of these are easy enough to cover multiple per day.
+This will cover commands built into Linux; applications like Wireshark will come later. Many of these are easy enough to cover multiple per day, but others may take longer.
 
 - [ ] File system commands
   - [ ] pwd
