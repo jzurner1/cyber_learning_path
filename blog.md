@@ -11,9 +11,9 @@ Description of everything that I did and what I learned
 
 ### Day 0: Setting up
 
-`3/11/22 - 3/12/22`
+`3/11/22 - 3/13/22`
 
-The 11th and 12th have been my days to set up the learning path and find out what I want to focus on. I plan to start tomorrow (Sunday) so I can have nice weekly sections. Over the coming weeks I will change the checklist as I learn more, but the general idea will stay the same.
+The 11th through 13th have been my days to set up the learning path and find out what I want to focus on. I plan to start tomorrow so I can have nice weekly sections. Over the coming weeks I will change the checklist as I learn more, but the general idea will stay the same.
 
 
 
@@ -21,6 +21,8 @@ The 11th and 12th have been my days to set up the learning path and find out wha
 
 
 ### Day 1: The Basics of IP Addresses and Subnetting
+
+`3/14/22`
 
 - An IPv4 address is split into four octets, each octet holding an eight-bit value between 0 and 255. The range of IP addresses (IP space) stretches from 0.0.0.0 to 255.255.255.255.
 - They are actual two addresses in one, the host address (address of the device) and the network address (address of the network the device is on). Say, for example, an IP address is 172.16.0.1. The first two octets, 172 and 16, refer to the network address while the last two octets, 0 and 1, refer to the host address. All hosts with the same network address are in the same network.
