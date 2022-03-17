@@ -57,3 +57,13 @@ The 11th through 13th have been my days to set up the learning path and find out
 - Sticky dynamic addresses are dynamically assigned IP addresses that don't change often, such as when a DHCP service tries to use the same address for repeat MAC addresses.
 - DHCP operation has four phases: server discover (discovery), IP lease offer (offer), IP lease request (request), and IP lease acknowledgement (acknowledgement), also known as DORA.
 - First, a new device will broadcase a DHCPDISCOVER message on the network, which will be received by the server. Next, the server reserves an IP address for the client and sends a lease offer with a DHCPOFFER message. This message contains a client id (usually the MAC address), the IP being offered, the subnet mask, the lease duration, and the IP address of the server. In response, the client replies with a DHCPREQUEST to request the offered address. When the server receives the DHCPREQUEST, it sends back a DHCPACK to the client including the lease duration and other configuration information.
+
+
+
+### Day 3
+
+`3/17/22`
+
+- Each network adapter has a unique MAC address (short for media access control address) assigned by the manufacturer. Similar to IP addresses, if a device has multiple network adapters, it will have multiple MAC addresses.
+- MAC addresses are directly tied to the hardware so they will never change, regardless of what network the device is on. Because of their tie to the hardware, they are also called hardware addresses. Windows can call them physical addresses while Apple uses the terms ethernet ID, airport ID, or WiFi address, depending on the communication standard.
+- MAC addresses work at the second layer of the OSI model.
