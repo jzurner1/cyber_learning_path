@@ -26,9 +26,9 @@ Before taking on any certifications, I want to get a strong background on some u
 
 ## 1.2 Networks
 I *think* I gathered all the major components and put them in a logical order. A lot of these will take about a day each, some more and some less:
-- [ ] IP addresses (IPv4 and IPv6)
+- [x] IP addresses (IPv4 and IPv6)
 - [ ] MAC addresses
-- [ ] DHCP
+- [x] DHCP
 - [ ] ARP
 - [ ] LAN
 - [ ] Network topologies
