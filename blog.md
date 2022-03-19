@@ -74,3 +74,21 @@ The 11th through 13th have been my days to set up the learning path and find out
 - Second, it will send an ARP reply with its IP and MAC addresses to computer A. Computer A will receive the message and add the information to its own ARP table. This allows computer A to finally send the message to computer B.
 - Other versions of ARP include reverse ARP (RARP), which allows devices to find their own IP address; inverse ARP (IARP), which allows a device to find an IP address from a MAC address; proxy ARP, which is a method for ARP requests on other networks through a proxy device; and gratuitous ARP, which is an ARP response that isn't prompted by an ARP request, generally to inform the entire network of updates to its IP or MAC mapping.
 - On a Windows device, the ARP table can be seen easily by entering `arp -a` into the command prompt. It will display the internet address (IP address) and the physical address (MAC address) as well as the mapping type (static or dynamic).
+
+
+
+### Day 4
+
+`3/18/22`
+
+- The open systems interconnection (OSI) model is used to describe how computers communicate over a network. While it has been replaced with the TCP/IP model, it is still widely used for various reasons.
+- The model has seven layers. Each layer describes different interactions in detail. The top layer, layer 7, is where humans can directly interact with computers, while the bottom layer, layer 1, is the raw data transmission over a physical medium. Each other layer is a process involved in turning that raw data into interactable material.
+- Layer 7, the application layer, is used by applications on the computer that can be interacted with my the user such as web browsers and email clients.
+- Layer 6, the presentation layer, prepares data for the application layer. It coordinates the encoding, encrypting, and compressing of data between two devices. In addition, it prepares data transmitted by the application layer for the session layer.
+- Layer 5, the session layer, creates and holds communication channels (sessions) between devices. It opens the sessions, keeps it open and functional while data is being sent, and closes it when the communication is over.
+- Layer 4, the transport layer, takes data from the session layer and breaks it into "segments" (or rejoins it when on the receiving end). It also controls the rate at which data is sent and received so both devices work at the same speed, as well as error control.
+- Layer 3, the network layer, has two main functions. The first is breaking up segments into network packets (and reassembling the packets on the receiving end), and the second is routing packets by discovering the best route across a physical network. Network addresses, usually IP addresses, are used to route the packets.
+- Layer 2, the data link layer, establishes and terminates the connection between two physically-connected nodes on a network. It also breaks packets into frames and sends them onward. There are two main parts, the logical link control (LLC) and media access control (MAC). LLC identifies network protocols, performs error checking, and synchronizes frames while MAC uses MAC addresses to connect devices and define permissions for transmitting and receiving data.
+- Layer 1, the physical layer, is responsible for the physical or wireless connection between network nodes. It is responsible for the transmission of the raw 1's and 0's and the bit rate control.
+- The transfer control protocol/internet protocol (TCP/IP) is what the modern internet is based on. It is effectively a simplified version of the OSI model.
+- Two of the largest changes are the combination of a few layers. The OSI layers 5, 6, and 7 are combined into one application layer, and the layers 1 and 2 are combined into one network access layer.
