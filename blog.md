@@ -92,3 +92,17 @@ The 11th through 13th have been my days to set up the learning path and find out
 - Layer 1, the physical layer, is responsible for the physical or wireless connection between network nodes. It is responsible for the transmission of the raw 1's and 0's and the bit rate control.
 - The transfer control protocol/internet protocol (TCP/IP) is what the modern internet is based on. It is effectively a simplified version of the OSI model.
 - Two of the largest changes are the combination of a few layers. The OSI layers 5, 6, and 7 are combined into one application layer, and the layers 1 and 2 are combined into one network access layer.
+
+
+
+### Day 5
+
+`3/19/22`
+
+- The TCP/IP model, also known as the internet protocol suite, is a framework using a set of communication protocols for computers to interact. It is named after the TCP and IP protocols.
+- A protocol is a set of rules that specify how systems can communicate, in this case how data is transferred from one system to another. This model details how data travels from one computer to another through a series of transformations.
+- The four layers of the TCP/IP model are the application layer, transport layer, internet layer, and network interface layer. Each layer contains specific protocols that allows them to transform the data as it passes through.
+- The application layer is the closest layer to the user. It contains the protocols used by most applications for providing user services or exchanging application data. Some of the major protocols include HTTP, FTP, SMTP, and DHCP. Data coded according to protocols on this layer are encapsulated intotransport layer protocol units such as TCP streams or UDP datagrams.
+- The transport layer establishes basic data channels that applications use for data exchange. Essentially, it tries to provide transportation for data from a process on one device to a process on another device. It determines how much data should be sent where and at what rate as well as ensuring that the data is transmitted without any errors. The main protocol on this layer is TCP (and UDP to a lesser extent), hence the TCP portion of the model's name.
+- The internet layer, also known as the network or internetwork layer, routes and delivers packets from source to destination based only on the address. It uses the IP protocol (hence the IP portion of the model's name) which uses IP addrresses to transport packets to the next IP router that has connectivity to a network closer to the final data destination.
+- The network interface layer transports bits or packets over a physical medium such as ethernet or wifi.
