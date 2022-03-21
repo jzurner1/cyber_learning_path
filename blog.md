@@ -106,3 +106,33 @@ The 11th through 13th have been my days to set up the learning path and find out
 - The transport layer establishes basic data channels that applications use for data exchange. Essentially, it tries to provide transportation for data from a process on one device to a process on another device. It determines how much data should be sent where and at what rate as well as ensuring that the data is transmitted without any errors. The main protocol on this layer is TCP (and UDP to a lesser extent), hence the TCP portion of the model's name.
 - The internet layer, also known as the network or internetwork layer, routes and delivers packets from source to destination based only on the address. It uses the IP protocol (hence the IP portion of the model's name) which uses IP addrresses to transport packets to the next IP router that has connectivity to a network closer to the final data destination.
 - The network interface layer transports bits or packets over a physical medium such as ethernet or wifi.
+
+
+
+### Day 6
+
+`3/20/22`
+
+- A computer network is defined as two or more computers connected in a wired or wireless format using cables or WiFi, respectively. A network has the goal of transmitting, exchanging, or sharing data or resources. They are made up of hardware such as routers, switches, and cables as well as software.
+- There are a number of network types, usually defined by their size, location, or usage.
+- A local area network (LAN) connects computers using wires over a short distance such as an office building or school. They are typically privately owned and relatively easy to work on. A wireless local area network (WLAN) is the wireless version of a LAN.
+- A wide area network (WAN) connects computers over a wide area like a country or continent. The internet is an example of a wide area network.
+- A metropolitan area network (MAN) is between LANs and WANs in size. As the name suggests, it is usually managed by a city or small countries.
+- A personal area network (PAN) is designed to serve one person, generally for the transfer of files between two local devices.
+- A storage area network (SAN) is a special network designed to provide access to cloud storage. For the user, it acts as a storage drive that is physically attached to the device.
+- A campus area network (CAN), also known as a corporate area network, is between a LAN and MAN in size. It serves places such as entire campuses or large business areas.
+- A virtual private network (VPN) uses an encrypted channel between two network end points. It allows a user to access the internet through another device in a secure format.
+- When data is sent from one device to another over a network, it contains a header that includes the IP address of the sender and receiver.
+- A network is made up of nodes, which are basically the devices making up the network. A node can send, receive, create, or store data and must have an IP address. In essence, a node is any network device that can interact with information from another node. These include computers, printers, routers, etc.
+- Nodes are connected with cables, fiber optics, or wireless signals.
+- A router is a device that sends information between networks. They analyze data within packets to determine the best way for the information to reach its ultimate destination. They forward data packets until the data reaches its destination.
+- A port is a special connection between network devices, identified by a number. They are used to differentiate between different services and protocols and to determine which application, service, or process should receive specific messages.
+- The internet is a massive network of billions of devices. Protocols such as HTTP and SMTP allow consistent communication between the devices.
+- Internet service providers (ISPs) and network service providers (NSPs) provide the infrastructure that allows the transmission of packets over the internet. They make sure that information goes where its destination is located.
+- Peer to peer (P2P) architecture involves two or more computers connected as equals, with no computer having higher power or privileges. Every device on the network acts as a client (a computer accessing a service) and a server (a computer providing services).
+- Client/server architecture, also known as a tiered model, involves a central server or group of servers managing resources and providing services to client devices in the network. The clients in the network communicate with each other through the server.
+- A network topology is the arrangement of nodes and links in a network. There are a number of topologies but some are more common than others.
+- A star topology is laid out so every node on the network is directly connected to a central hub. The central hub is generally the central server in the client/server architecture, providing data transmission between nodes. This type of topology is common because it allows easier management of the entire network. If one node fails, the network will continue unaffected, and devices can be added, removed, and modified without any issues. It also makes it easier to identify errors or performance issues. The entire network is limited by the central hub's ability, and if the central hub goes down, so does the rest of the network.
+- A bus topology has all devices connected to a single cable running from one end of the network to the other. It is simple and cost effective, and more nodes can be added easily. If, however, the main cable has any issues, the entire network will fail. This is also hard to troubleshoot and expensive to repair. Bus topologies are best for small networks because more nodes will slow the transmission speed of data.
+- A ring topology contains all nodes at some point on a ring. The data can travel in one direction or both, depending on the setup. Only one node can send data at a time which makes it slow but reduces errors. If one node or link fails, then the rest of the network might go down. It is hard to scale a ring topology, and the entire network must be taken down to add, remove, or reconfigure a node. It works well for a small network, but not for larger ones.
+- There are many other topologies, but most of them are subsets of those previously mentioned. A couple are unique, such as a tree topology that branches out or a mesh topology, where most nodes are connected to most other nodes.
