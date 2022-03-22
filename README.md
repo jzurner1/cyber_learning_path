@@ -27,14 +27,14 @@ Before taking on any certifications, I want to get a strong background on some u
 ## 1.2 Networks
 I *think* I gathered all the major components and put them in a logical order. A lot of these will take about a day each, some more and some less:
 - [x] IP addresses (IPv4 and IPv6)
-- [ ] MAC addresses
+- [x] MAC addresses
 - [x] DHCP
-- [ ] ARP
-- [ ] LAN
-- [ ] Network topologies
+- [x] ARP
+- [x] LAN
+- [x] Network topologies
 - [ ] Packets
 - [ ] SMB
-- [ ] OSI model (overview)
+- [x] OSI model (overview)
   - [ ] Application layer
   - [ ] Presentation layer
   - [ ] Session layer
@@ -43,8 +43,8 @@ I *think* I gathered all the major components and put them in a logical order. A
   - [ ] Data link layer
   - [ ] Physical layer
 - [ ] Spanning Tree Protocol
-- [ ] Encapsulation and de-encapsulation
-- [ ] Data vs segments/datagrams vs packets vs frames vs bits
+- [x] Encapsulation and de-encapsulation
+- [x] Data vs segments/datagrams vs packets vs frames vs bits
 - [ ] TCP
 - [ ] UDP
 - [ ] Other communication protocols
