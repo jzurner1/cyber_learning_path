@@ -136,3 +136,32 @@ The 11th through 13th have been my days to set up the learning path and find out
 - A bus topology has all devices connected to a single cable running from one end of the network to the other. It is simple and cost effective, and more nodes can be added easily. If, however, the main cable has any issues, the entire network will fail. This is also hard to troubleshoot and expensive to repair. Bus topologies are best for small networks because more nodes will slow the transmission speed of data.
 - A ring topology contains all nodes at some point on a ring. The data can travel in one direction or both, depending on the setup. Only one node can send data at a time which makes it slow but reduces errors. If one node or link fails, then the rest of the network might go down. It is hard to scale a ring topology, and the entire network must be taken down to add, remove, or reconfigure a node. It works well for a small network, but not for larger ones.
 - There are many other topologies, but most of them are subsets of those previously mentioned. A couple are unique, such as a tree topology that branches out or a mesh topology, where most nodes are connected to most other nodes.
+
+
+
+### Day 7
+
+`3/21/22`
+
+Introductory networking room of THM's complete beginner course
+
+- The OSI model was covered briefly on day 4, but there is a bit more to know.
+- As data is passed through each layer of the model (from layer 7 downward), more information is added in the form of headers; this is called encapsulation. Most layers have a header to add.
+- Layer 7 adds the application layer header. Right now, the data is just called data.
+- Layer 6 adds the presentation layer header.
+- Layer 5 adds the session layer header.
+- Layer 4 adds the transport layer header, and the data is now called segments or datagrams, depending on whether TCP or UDP is being used.
+- Layer 3 adds the network layer header, and the data is now called packets.
+- Layer 2 adds the data link header and the data link trailer, and the data is now called frames.
+- Layer 1 is now called a data stream, made up of bits.
+- When the message is received by another computer, the process is reversed and data is stripped off on each layer. This process is called de-encapsulation.
+- Now, back to TCP/IP, TCP is a connection-based protocol, so a stable connection must be made between two computers before any data can be sent. This is called a three-way handshake.
+- First, your computer sends a message saying that it wants to form a connection. This request contains a SYN (synchronize) bit, establishing first contact.
+- Next, the other computer will respond with a packet containing a SYN bit and an ACK (acknowledgement) bit.
+- Lastly, your computer will respond with a packet containing an ACK bit, indicating that the connection has succeeded.
+- Any data that is lost or corrupted is re-sent to guarantee a lossless connection.
+- Now, to Linux commands. There are a few basic networking commands that are very helpful to know.
+- ping: The ping command is very basic, testing if a connection to a remote resource is possible. This could be a website or another device. It uses the ICMP protocol, which is a protocol in TCP/IP; it works on the network layer of the OSI model and the internet layer of the TCP/IP model. The syntax is simply `ping (target)`. It will return the IP address of the target as well as some basic information on the connection.
+- traceroute: The traceroute command allows you to see all the nodes that your data goes through on its way to a target. The syntax is the same as ping, just `traceroute (target)`.
+- whois: The whois command gives information on a domain, telling a lot about how it is set up. The syntax is `whois (domain)`.
+- dig: Dig gives basic information on the DNS setup of a website. The syntax is `dig (domain)`.
