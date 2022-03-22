@@ -1,4 +1,4 @@
-For a more readable version, go to [my website](https://josephzurner.com/Blog/).
+For a more readable version, go to [my website](https://josephzurner.com/Blog/). This page is just the raw information.
 
 
 ### Day 0: Setting up
@@ -157,3 +157,15 @@ Introductory networking room of THM's complete beginner course
 - traceroute: The traceroute command allows you to see all the nodes that your data goes through on its way to a target. The syntax is the same as ping, just `traceroute (target)`.
 - whois: The whois command gives information on a domain, telling a lot about how it is set up. The syntax is `whois (domain)`.
 - dig: Dig gives basic information on the DNS setup of a website. The syntax is `dig (domain)`.
+
+
+
+### Day 8
+
+`3/22/22`
+
+- A port on a device is a virtual point where network connections can start and end. They are managed by the computer's operating system, and each port is associated with a different process or service.
+- Because each port is associated with something different, it makes it easy for computers to sort through different kinds of traffic. Ports are standardized across all network-connected devices, with each port assigned a number.
+- On the OSI model, ports are a layer 4 concept because only a transport protocol like TCP or UDP can indicate which port should be used. TCP and UDP headers have a section that indicates the port that a packet should go to.
+- Ports can be open, closed, or filtered. An open port is one that is accessible and has an application listening for new connections, while a closed port is also accessible but doesn't have an application listening. A filtered port means that a firewall, filter, or something else is blocking the port. Nmap includes a couple others. Unfiltered means the port is open or closed, open|filtered means it could be open or filtered, and closed|filtered means that the port is closed or filtered. In all three cases, Nmap could not determine which one it is.
+- There are 65,535 possible port numbers, but not all of them are used. Some of the more popular ones include ports 20/21, for file transfer protocol (FTP); port 22, for secure shell (22); port 23, for telnet; port 25, for simple mail transfer protocol (SMTP); port 53, for domain name system (DNS); port 80, for hypertext transfer protocol (HTTP); port 110, for post office protocol (POP3); port 123, for network time protocol (NTP); port 179, border gateway protocol (BGP); port 443, for HTTP secure (HTTPS); port 500, for internet security association and key management protocol (ISAKMP); and port 3389, remote desktop protocol (RDP).
