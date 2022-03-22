@@ -1,12 +1,4 @@
-### Template
-
-`Date(s)`
-
-Description of everything that I did and what I learned
-
-
-
----
+For a more readable version, go to [my website](https://josephzurner.com/Blog/).
 
 
 ### Day 0: Setting up
