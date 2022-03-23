@@ -164,8 +164,26 @@ Introductory networking room of THM's complete beginner course
 
 `3/22/22`
 
-- A port on a device is a virtual point where network connections can start and end. They are managed by the computer's operating system, and each port is associated with a different process or service.
-- Because each port is associated with something different, it makes it easy for computers to sort through different kinds of traffic. Ports are standardized across all network-connected devices, with each port assigned a number.
-- On the OSI model, ports are a layer 4 concept because only a transport protocol like TCP or UDP can indicate which port should be used. TCP and UDP headers have a section that indicates the port that a packet should go to.
-- Ports can be open, closed, or filtered. An open port is one that is accessible and has an application listening for new connections, while a closed port is also accessible but doesn't have an application listening. A filtered port means that a firewall, filter, or something else is blocking the port. Nmap includes a couple others. Unfiltered means the port is open or closed, open|filtered means it could be open or filtered, and closed|filtered means that the port is closed or filtered. In all three cases, Nmap could not determine which one it is.
-- There are 65,535 possible port numbers, but not all of them are used. Some of the more popular ones include ports 20/21, for file transfer protocol (FTP); port 22, for secure shell (22); port 23, for telnet; port 25, for simple mail transfer protocol (SMTP); port 53, for domain name system (DNS); port 80, for hypertext transfer protocol (HTTP); port 110, for post office protocol (POP3); port 123, for network time protocol (NTP); port 179, border gateway protocol (BGP); port 443, for HTTP secure (HTTPS); port 500, for internet security association and key management protocol (ISAKMP); and port 3389, remote desktop protocol (RDP).
+- VIM is modal, meaning it has different modes. The default mode on opening a file is command mode, which allows you to do commands such as :set number to turn on line numbers.
+- Pressing i changes the mode to insert mode, which allows typing. Press Esc to return to command mode.
+- In command mode, to quit, do :q. To write to a file, do :w. To write and quit, do :wg. To quit without saving, do :q!.
+- To delete lines, enter command mode and move the cursor to a line you want to delete. Press the d key twice.
+- To delete a number of lines, type the number of lines then press the d key twice. This will delete the line that your are currently on as well as lines below it, depending on the number entered.
+- Press u to undo the last action. Ctrl+r to redo items.
+- To search a file, do / and the search string, for example /asdf. Press n to go to the next match and Shift+n to go to the previous match.
+- To search and replace, put :%s, the string to replace, another slash, the string to replace it with, and optionally /gc at the end if you want to confirm each replacement. For example, to replace string with STRING, the command would be :%s/string/STRING. To confirm each replacement, it would be :%s/string/STRING/gc.
+- To copy a line, put your cursor on it and press yy. To paste it, move your cursor to the line above where you want to place it and press p.
+- Bash is a scripting language that runs within Linux terminals. It can be used to achieve complex tasks and automation.
+- Bash files either don't have an extension or have the extension .sh.
+- The first line of a bash script must always be #!/bin/bash, which tells the computer that it is a bash script.
+- Other lines can simply include Linux commands such as echo or pwd.
+- To run a bash file, you first need to give it executable permissions. To do this, run chdmod +x yourfile in the terminal, then ./yourfile to run it.
+- Like other programming languages, bash lets you assign variables. To create a simple name variable, do name="Bob". Later, the variable can be used with commands in formats like echo $name. When creating variables, make sure there aren't spaces around the equals sign.
+- To debug a bash file, run the command bash -x ./yourfile. The program will be run through on the terminal. To debug just parts of a program, add set -x and set +x around the areas you want to debug.
+- You can also add parameters to a bash file for inputting outside of the program. To do this, set a variable equal to $1, and when you run the script, add the parameter after it. For example, the code name=$1, echo $name can be run with ./yourfile Bob. The result will be Bob on the terminal, as it was passed in as an argument, set as the name variable, and printed with echo. To add more arguments, do $2, $3, and so on.
+- Alternatively, there is an option similar to cin in C++. To read in a value and assign it to a variable, just use the keyword read. For example, to create a variable called name and assign it a user-assigned value, it is simply read name.
+- To create an array in bash, it is simply arrayname=('item1' 'item2' 'item3').
+- To print all the items in an array, do echo "${arrayname[@]}". The @ means all arguments while the [] specifies that it is an array. To print a single item, replace @ with the item's index position. As with other languages, the index starts at 0.
+- To remove an array item, do unset arrayname[item index]. To set an array item, do arrayname[item index]='new item'.
+- Bash also has conditional statements. There is no punctuation or brackets at all besides square brackets around the item being tested, such as if [ something ]. The next line would simply be then, the next line what happens, the next line else, the next something else that happens, and the last must be fi.
+- Unlike other languages that use operators such as ==, bash uses what looks like flags.
