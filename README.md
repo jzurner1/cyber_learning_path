@@ -127,10 +127,11 @@ This will cover commands built into Linux; applications like Wireshark will come
   - [ ] apt -get
   - [ ] reboot
 - [ ] Networking commands
-  - [ ] ping
+  - [x] ping
+  - [x] traceroute
   - [ ] ip addr
-  - [ ] whois (domain)
-  - [ ] dig
+  - [x] whois (domain)
+  - [x] dig
   - [ ] wget
   - [ ] curl
   - [ ] ssh
@@ -140,7 +141,7 @@ This will cover commands built into Linux; applications like Wireshark will come
   - [ ] netstat
 - [ ] Miscellaneous
   - [ ] Shell operators
-  - [ ] Text editors (VIM, nano)
+  - [x] Text editors (VIM, nano)
 
 ## 1.4 Common tools
 Common add-ons for penetration testing. These will probably take longer than a day.
