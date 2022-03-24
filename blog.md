@@ -187,3 +187,25 @@ Introductory networking room of THM's complete beginner course
 - To remove an array item, do unset arrayname[item index]. To set an array item, do arrayname[item index]='new item'.
 - Bash also has conditional statements. There is no punctuation or brackets at all besides square brackets around the item being tested, such as if [ something ]. The next line would simply be then, the next line what happens, the next line else, the next something else that happens, and the last must be fi.
 - Unlike other languages that use operators such as ==, bash uses what looks like flags.
+
+
+
+### Day 9
+
+`3/25/22`
+
+- A uniform resource locator (URL), also known as a web address, is a unique identifier for resources on the internet. When typed into an address bar, DNS resolution is used to match it to an IP address and then take you to the website.
+- The first part of a URL specifies the protocol needed to access a resource, which is why most URLs begin with http or https. Most of them are then followed by ://.
+- The main part of the URL, the domain, includes subdomains, a second-level domain, and a top-level domain, which can be read about below.
+- The last major section is the path, which specifies which location to access on the web server. This could be something like /shop/.
+- In addition, there may be a query with parameters such as ?=value. On some website such as Wikipedia, there may be a fragment (such as #history) that sets the location on the page.
+- All URLs also contain a port which is usually hidden, for example :port80. Ports 80 and 443 are the most common for webservers.
+- A top-level domain (TLD) is the ending of the domain, such as .com, .net, or .org.
+- There are two types of TLDs, generic TLD (gTLD) and country code TLD (ccTLD). Originally, gTLDs were supposed to indicate the type of organization in charge of the website (such as .gov for a government) and ccTLDs were supposed to indicate geographic area (such as .ca for Canada). There are now over 2000 TLDs due to high demand.
+- A second-level domain is the main part of the domain, such as google in google.com. A second-level domain is limited to 63 characters involving a-z, 0-9, and hyphens (not at the beginning or end).
+- A subdomain is to the left of a second-level domain, such as admin.google.com. Each subdomain has the same length and character limits as a second-level domain, but multiple subdomains can be attached for a maximum of 253 characters.
+- There are multiple types of DNS records. A records resolve to IPv4 addresses; AAAA records resolve to IPv6 addresses; CNAME records resolve to another domain name; MX records resolve to the address of the servers that handle the email for the domain being queried; and TXT records are just plaintext fields.
+- You look up a domain in a search bar. Your computer first checks to see if the website is in the local cache, meaning it has been visited recently. If it hasn't, a request is made to your recursive DNS server. Recursive DNS servers are usually hosted by your ISP.
+- The recursive DNS server also has a local cache shared by everyone using your ISP. If the website still isn't found, it is sent to the internet's root DNS servers. - - These root DNS servers recognize the TLD in the URL you provided, and you will be referred to the correct TLD server.
+- The TLD server contains information on where to find the authoritative server (also known as the nameserver) for your DNS request. The authoritative server is responsible for holding the DNS records for a particular domain name.
+- When the DNS record is found, it will be sent back to your device and a copy may be sent to the recursive DNS server where a copy will be saved for future requests. This copy lasts as long as its time-to-live (TTL) value, in seconds.
