@@ -192,7 +192,7 @@ Introductory networking room of THM's complete beginner course
 
 ### Day 9
 
-`3/25/22`
+`3/23/22`
 
 - A uniform resource locator (URL), also known as a web address, is a unique identifier for resources on the internet. When typed into an address bar, DNS resolution is used to match it to an IP address and then take you to the website.
 - The first part of a URL specifies the protocol needed to access a resource, which is why most URLs begin with http or https. Most of them are then followed by ://.
@@ -214,7 +214,7 @@ Introductory networking room of THM's complete beginner course
 
 ### Day 10
 
-`3/26/22`
+`3/24/22`
 
 - Metasploit is a framework used by penetration testers for a number of uses. It supports all phases of an engagement from information gathering to post-exploitation.
 - There are two main versions, the commercial pro version and the community framework version. The pro version has a graphical user interface (GUI) while the community version is used from the command line.
