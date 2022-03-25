@@ -12,7 +12,7 @@ The 11th through 13th have been my days to set up the learning path and find out
 ---
 
 
-### Day 1: The Basics of IP Addresses and Subnetting
+### Day 1
 
 `3/14/22`
 
@@ -209,3 +209,30 @@ Introductory networking room of THM's complete beginner course
 - The recursive DNS server also has a local cache shared by everyone using your ISP. If the website still isn't found, it is sent to the internet's root DNS servers. - - These root DNS servers recognize the TLD in the URL you provided, and you will be referred to the correct TLD server.
 - The TLD server contains information on where to find the authoritative server (also known as the nameserver) for your DNS request. The authoritative server is responsible for holding the DNS records for a particular domain name.
 - When the DNS record is found, it will be sent back to your device and a copy may be sent to the recursive DNS server where a copy will be saved for future requests. This copy lasts as long as its time-to-live (TTL) value, in seconds.
+
+
+
+### Day 10
+
+`3/26/22`
+
+- Metasploit is a framework used by penetration testers for a number of uses. It supports all phases of an engagement from information gathering to post-exploitation.
+- There are two main versions, the commercial pro version and the community framework version. The pro version has a graphical user interface (GUI) while the community version is used from the command line.
+- The tools available allow for information gathering, scanning, exploit development, post-exploitation, and more.
+- After installation, Metasploit can be launched with the command `msfconsole`. This opens the console which will be the main interface for interacting with the different modules provided. Modules are small components built to perform specific tasks.
+- An exploit is a piece of code that uses a vulnerability present on the current system. A vulnerability is a design, coding, or logic flag affecting the target system. Exploiting a vulnerability can allow an attacker to gain access to information or execute code on the target system. While an exploit takes advantage of a vulnerability, a payload is used for that exploit to have the desired effect.
+- There are a number of categories available. The auxiliary category contains supporting modules such as scanners, crawlers, and fuzzers. Encoders allow encoding exploits and payloads in the hope that a signature-based antivirus solution will miss them. Evasion allows attempts to evade antivirus rather than encoding. The exploit section contains exploits in an organized fashion. NOPs (no operation) do nothing, used as a buffer to achieve consistent payload sizes. Payloads are code that will run on the target system. Post includes modules for post-exploitation.
+- There are three different sections under payloads. Singles are self-contained payloads that don't need an additional component to run. Stagers are responsible for setting up a connection between metasploit and the target system. They are useful with staged payloads. Staged payloads first upload a stager on the target system then download the rest of the stage (payload). This is beneficial as it allows larger payloads to be used.
+- Once the console is up, the `help` command lists commands and documentation. You can also do `help (command)` for more information about a command.
+- The `use` command is used to load a module. After loading a module, the command `show` can be used to learn more and see options. Subcommands include `show all`, `show options`, and `show payloads`, `show targets`, and `show info`, among others.
+- The `search` command allows you to search for different modules. You can use `type:` and `platform:` as well as keywords. To see more filters, use `help search`. For example, to find a windows flash exploit, you could do `search type:exploit platform:windows flash`, and your results would come up.
+- Once you find a payload/exploit, you can use the command `use` to make it active. Just copy and paste the path to the module after the `use` keyword. Next, do `show options` to see options and `set` to set options. For example, to set SSL to yes, do `set SSL yes`. After choosing settings, just enter `exploit` to run the command.
+- To return to the main console, use the command `back`.
+- While modules are usually stored in `/usr/share/metasploit-framework/modules`, mine are stored at `/opt/metasploit-framework/embedded/framework/modules`.
+- Within the modules folder is six folders, one for each type of module: exploits, payloads, auxiliary, encoders, post, and NOPs.
+- Exploit modules are usually used for exploitation. They were created to allow you to take advantage of an exploit or a vulnerability. Within the exploits folder is another group of folders for every major operating system or piece of software that has an exploit, such as Windows and Firefox.
+- Payloads are files that are left on an exploited system that give the attacker access or control over the system. Some versions are called rootkits. The payloads folder contains singles, stagers, and stages, which were explained above.
+- Auxiliary contains unique attacks such as DoS, fuzzers, and scanners.
+- Encoders simply re-encode payloads and exploits to get past security systems. The encoders folder has a number of subcategories such as php, cmd, and more.
+- The NOP folder contains things that make the computer do nothing for a clock cycle. The subcategories are similar to encoders.
+- Post covers post exploitation, usable after the system has been exploited. They provide extra pieces of functionality such as keyloggers or camera viewers.
