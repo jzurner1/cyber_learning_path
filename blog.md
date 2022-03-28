@@ -236,3 +236,41 @@ Introductory networking room of THM's complete beginner course
 - Encoders simply re-encode payloads and exploits to get past security systems. The encoders folder has a number of subcategories such as php, cmd, and more.
 - The NOP folder contains things that make the computer do nothing for a clock cycle. The subcategories are similar to encoders.
 - Post covers post exploitation, usable after the system has been exploited. They provide extra pieces of functionality such as keyloggers or camera viewers.
+
+
+
+### Day 11
+
+`3/26/22`
+
+- back simply returns to the previous menu
+- banner displays a random Metasploit banner
+- cd works the same as the normal terminal, allowing you to change directories
+- color enables or disables colors
+- connect is basically a mini Netcat clone, allowing you to connect to remote hosts
+- edit allows you to edit the current module in Vim
+- exit will exit msfconsole
+- grep is the same as normal Linux, returning matches from a command
+- help is the same as well
+- info is very helpful as it provides information about modules including options, targets, and more
+- irb allows you to create Metasploit scripts in a live Ruby shell
+- jobs lets you see jobs, which are modules running in the background
+- kill will simply kill any running jobs when matched with a job ID
+- load loads a plugin from Metasploit's plugin directory
+- loadpath will load a "third-part module tree for the path", whatever that means
+- unload will unload a previously loaded plugin
+- resource runs resource/batch files that can be loaded through msfconsole
+- route allows you to route sockets through a session to allow some pivoting capabilities
+- search lets you search for modules with regex; there are a number of filters that can be used
+- sessions lets you list, interact with, and kill spawned sessions such as shells
+- set allows you to set framework options and parameters for the current module
+- unset is the opposite of set
+- setg lets you set global variables
+- show lists all modules within Metasploit, can be followed up with the type (like exploits)
+- use lets you use a module that you have selected by adding the path
+- Exploits in Metasploit are all either active or passive
+- Active exploits will exploit a specific host, run until completion, and then exit
+- Passive exploits wait for incoming hosts and exploit them as they connect. They generally focus on clients such as web browsers or FTP clients
+- To use an exploit, the first step is to find one that you want to use. This can be done with the search command or show
+- Once an exploit is chosen, it must be selected with the use command and the path relative to the exploit folder, such as use exploit/windows/smb/ms09_050_smb2_negotiate_func_index
+- Selecting an exploit with the use command opens up a couple more commands, namely exploit (starts the exploitation attempt) and check
