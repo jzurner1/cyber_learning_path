@@ -274,3 +274,17 @@ Introductory networking room of THM's complete beginner course
 - To use an exploit, the first step is to find one that you want to use. This can be done with the search command or show
 - Once an exploit is chosen, it must be selected with the use command and the path relative to the exploit folder, such as use exploit/windows/smb/ms09_050_smb2_negotiate_func_index
 - Selecting an exploit with the use command opens up a couple more commands, namely exploit (starts the exploitation attempt) and check
+
+
+
+### Day 12
+
+`3/27/22`
+
+- TCP and UDP are two methods for data to move between devices.
+- TCP (transmission control protocol) is connection oriented, meaning that once a connection is established, data can be transmitted in both directions. To establish a connection, a three-way handshake must be completed. In addition, TCP uses retransmission error detection to make sure that the data received is the correct data. If it isn't, it is send again.
+- UDP (user datagram protocol) is connectionless, meaning each piece of data can be send separately and doesn't need to be together. It uses checksums for data integrity, but otherwise is very bare. This makes it faster than TCP but less reliable.
+- Checksums are small blocks of data that have different values for different data. This ensures that if the data is changed even a little bit, the checksum will be different, showing that it may need to be retransmitted.
+- Connection oriented means that there must be a solid connection between the devices before data can be sent, but once there is, it can be sent either way.
+- Connectionless indicates that data, even in the same transmission, doesn't have to be attached to itself and can be sent individually.
+- Retransmission is the resending of packets that are damaged or lost.
