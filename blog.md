@@ -288,3 +288,60 @@ Introductory networking room of THM's complete beginner course
 - Connection oriented means that there must be a solid connection between the devices before data can be sent, but once there is, it can be sent either way.
 - Connectionless indicates that data, even in the same transmission, doesn't have to be attached to itself and can be sent individually.
 - Retransmission is the resending of packets that are damaged or lost.
+
+
+
+### Day 13
+
+`3/29/22`
+
+- When data leaves one device to travel to another, it goes through a process called encapsulation as it travels through the OSI model. When it enters the other device, it goes through the de-encapsulation process.
+- The data is just called data in the OSI model application, presentation, and session layers.
+- The transport layer adds a segment header to the data, and it is then called segments or datagrams.
+- The network layer adds a packet header, and it is then called packets.
+- The data-link layer adds both a frame header and a frame trailer, and it is now called frames.
+- The physical layer converts the data into bits.
+- The process is reversed in de-encapsulation, starting with bits and ending with data.
+- All the forms of data can be represented in a sort of grid, 32 bits wide by however many bytes tall.
+TCP Segments:
+- The first 16 bits contain the source (client) port number
+- The second 16 bits contain the destination (server) port number
+- The entire second row contains the sequence number, used to guarantee that the packets are sent in order.
+- The entire third row contains the acknowledgement number, basically the byte number that the destination expects to receive next; used to make sure all packets are received.
+- The first 4 bits of the fourth row contains the data offset, indicating how far the data is from the beginning of the segment.
+- The next 3 bits are reserved, all set to zero.
+- The next 9 bits are for various flags: NS, CWR, ECE, URG, ACK, PSH, RST, SYN, and FIN.
+- The last 16 bits of the fourth row indicate the receive window, which is the number of bytes the sender of the segment is willing to receive. This is part of TCP flow control.
+- The first 16 bits of the fifth row contains the checksum used for error checking.
+- The last 16 bits contains the urgent pointer, used for priority data. Associated with the URG flag.
+- The last section is options, containing 0 to 320 bits of data. It must be divisible by 32, so any difference must have padding. These options can indicate a number of things but aren't used too often.
+UDP Datagrams:
+- If data is sent with UDP instead of TCP, it will be a datagram at the transport layer instead of a segment.
+- Datagrams are a lot smaller, with only a few sections.
+- The first 16 bits contain the source (client) port number, same as TCP
+- The second 16 bits contain the destination (server) port number, also the same
+- The first 16 bits of the second row contains the length (in bytes) of the header, always between 8 and 65,636 bytes. Using jumbograms in IPv6, it is possible to have longer datagrams.
+- The second 16 bits of the second row holds the checksum, which is optional in IPv4 and mandatory in IPv6. If it isn't used, it will hold all 0s.
+- The data is contained in the third row and beyond.
+IPv4 Packets:
+- The first four bits contain the version, which is always 0100 (4 in binary).
+- The second four bits contain the header length field, which indicates how long the header is, measured in 32 bit units called words. The values range from 5 words (160 bits/20 bytes) to 15 words (480 bits/60 bytes). This is used to show where the header ends and the data starts, also known as the data offset. It will always be 5 words long unless there are options present, which is not common.
+- Bits 8-15 contain the type of service (TOS). TOS is used to manage bandwidth by priority, with some actions given higher priority than others. If it is not enabled, bandwidth is managed on a first come, first served basis.
+- The last 16 bits of the first row contains the total length of the packet, including the header and the data. This is measured in bytes instead of words. The size ranges from 20 bytes (20 in the header, 0 for data) to 65,535 bytes. In IPv4, if required, some packets can be broken down into smaller sizes to get through some areas. This is called fragmentation; they are reassembled at the other end.
+- The first half of the second row contains the packet's identification, also known as the fragment ID. This is used in the event of fragmentation, identifying what fragment of a larger packet this is.
+- The next three bits are flags related to fragmentation. The first is always zero; the second is the don't fragment (DF) flag, preventing it from being fragmented and instead dropping it if it can't travel through a network; the third is the more fragments (MF) flag, indicating that there are more fragments coming after this one.
+- The last 13 bits of the second row contains the fragment offset. It is used in reassembling fragmented packets. It is used to indicate the starting position of the data in the fragment in relation to the start of the data in the original packet.
+- The first 8 bits of the third row indicates the time-to-live (TTL). It used to mean the maximum number of seconds that a packet can survive, but it has come to mean the number of hops across a router or switch that are allowed. It is made to prevent a packet being around forever.
+- The next 8 bits of the third row contains the protocol field, defining the type of data in the data portion of the packet. It is indicated with protocol numbers. Some common protocol numbers include 1 for ICMP, 6 for TCP, and 17 for UDP.
+- The second half of the third row is the header checksum. This is used to verify that the data hasn't been corrupted at all, but occasionally a few errors will cancel each other out.
+- The entire fourth row contains the source address, meaning the IPv4 address of the sender.
+- The entire fifth row contains the destination address, meaning the IPv4 address of the recipient.
+- The next section, for options, is rarely used. If it is, it contains anywhere from 0 to 40 bytes of options. It will be padded with 0's to maintain a length divisible by 32 bits/4 bytes.
+IPv6 Packets
+- The first four bits contain the version, similar to IPv4 packets. These, for obvious reasons, contain the value 0110 (6 in binary).
+- The next 8 bits contain the traffic class, similar to the TOS in IPv4 packets.
+- The last 20 bits contain the flow label, indicating to intermediate devices that a packet belongs to a specific stream of packets between a source and destination.
+- The first 16 bits of the second row contains the payload length, indicating the length of the data portion in bytes. This does not include the header length.
+- The next 8 bits of the second row is the Next Header, specifying the protocol used such as TCP, UDP, or ICMPv6. It also uses values to indicate the protocol like the protocol field in IPv4. These values are indicated in hex.
+- The last 8 bits is the hop limit, similar to the TTL in IPv4 but more accurately named.
+- The source and destination addresses are the same as in IPv4 but now they each take up 128 bits instead of 32 bits.
