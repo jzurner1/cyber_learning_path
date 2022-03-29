@@ -45,8 +45,8 @@ I *think* I gathered all the major components and put them in a logical order. A
 - [ ] Spanning Tree Protocol
 - [x] Encapsulation and de-encapsulation
 - [x] Data vs segments/datagrams vs packets vs frames vs bits
-- [ ] TCP
-- [ ] UDP
+- [x] TCP
+- [x] UDP
 - [ ] Other communication protocols
 - [ ] Hardware (router, switch, etc)
 - [ ] Physical networking (OSI model 1) (UTP, STP, Coaxial, Fiber Optic Cables)
@@ -75,8 +75,8 @@ Putting it all together:
 - [ ] How are different types of data sent and loaded on your web browser?
 
 Optional topics:
-- [ ] Subnet masks
-- [ ] Network classes
+- [x] Subnet masks
+- [x] Network classes
 
 
 ## 1.3 Operating Systems: Linux
