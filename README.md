@@ -32,7 +32,7 @@ I *think* I gathered all the major components and put them in a logical order. A
 - [x] ARP
 - [x] LAN
 - [x] Network topologies
-- [ ] Packets
+- [x] Packets
 - [ ] SMB
 - [x] OSI model (overview)
   - [ ] Application layer
@@ -58,7 +58,7 @@ I *think* I gathered all the major components and put them in a logical order. A
 - [ ] Web servers and websites
 - [ ] Web browsers
 - [ ] Cookies
-- [ ] URLs and DNS
+- [x] URLs and DNS
 - [ ] HTTP and HTTPS
 - [ ] RIP Routing protocol
 - [ ] Proxy
