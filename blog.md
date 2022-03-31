@@ -341,7 +341,7 @@ Introductory networking room of THM's complete beginner course
 - The entire fifth row contains the destination address, meaning the IPv4 address of the recipient.
 - The next section, for options, is rarely used. If it is, it contains anywhere from 0 to 40 bytes of options. It will be padded with 0's to maintain a length divisible by 32 bits/4 bytes.
 
-**IPv6 Packets**
+**IPv6 Packets:**
 - The first four bits contain the version, similar to IPv4 packets. These, for obvious reasons, contain the value 0110 (6 in binary).
 - The next 8 bits contain the traffic class, similar to the TOS in IPv4 packets.
 - The last 20 bits contain the flow label, indicating to intermediate devices that a packet belongs to a specific stream of packets between a source and destination.
