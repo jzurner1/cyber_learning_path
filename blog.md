@@ -303,7 +303,8 @@ Introductory networking room of THM's complete beginner course
 - The physical layer converts the data into bits.
 - The process is reversed in de-encapsulation, starting with bits and ending with data.
 - All the forms of data can be represented in a sort of grid, 32 bits wide by however many bytes tall.
-TCP Segments:
+
+**TCP Segments:**
 - The first 16 bits contain the source (client) port number
 - The second 16 bits contain the destination (server) port number
 - The entire second row contains the sequence number, used to guarantee that the packets are sent in order.
@@ -315,7 +316,8 @@ TCP Segments:
 - The first 16 bits of the fifth row contains the checksum used for error checking.
 - The last 16 bits contains the urgent pointer, used for priority data. Associated with the URG flag.
 - The last section is options, containing 0 to 320 bits of data. It must be divisible by 32, so any difference must have padding. These options can indicate a number of things but aren't used too often.
-UDP Datagrams:
+
+**UDP Datagrams:**
 - If data is sent with UDP instead of TCP, it will be a datagram at the transport layer instead of a segment.
 - Datagrams are a lot smaller, with only a few sections.
 - The first 16 bits contain the source (client) port number, same as TCP
@@ -323,7 +325,8 @@ UDP Datagrams:
 - The first 16 bits of the second row contains the length (in bytes) of the header, always between 8 and 65,636 bytes. Using jumbograms in IPv6, it is possible to have longer datagrams.
 - The second 16 bits of the second row holds the checksum, which is optional in IPv4 and mandatory in IPv6. If it isn't used, it will hold all 0s.
 - The data is contained in the third row and beyond.
-IPv4 Packets:
+
+**IPv4 Packets:**
 - The first four bits contain the version, which is always 0100 (4 in binary).
 - The second four bits contain the header length field, which indicates how long the header is, measured in 32 bit units called words. The values range from 5 words (160 bits/20 bytes) to 15 words (480 bits/60 bytes). This is used to show where the header ends and the data starts, also known as the data offset. It will always be 5 words long unless there are options present, which is not common.
 - Bits 8-15 contain the type of service (TOS). TOS is used to manage bandwidth by priority, with some actions given higher priority than others. If it is not enabled, bandwidth is managed on a first come, first served basis.
@@ -337,7 +340,8 @@ IPv4 Packets:
 - The entire fourth row contains the source address, meaning the IPv4 address of the sender.
 - The entire fifth row contains the destination address, meaning the IPv4 address of the recipient.
 - The next section, for options, is rarely used. If it is, it contains anywhere from 0 to 40 bytes of options. It will be padded with 0's to maintain a length divisible by 32 bits/4 bytes.
-IPv6 Packets
+
+**IPv6 Packets**
 - The first four bits contain the version, similar to IPv4 packets. These, for obvious reasons, contain the value 0110 (6 in binary).
 - The next 8 bits contain the traffic class, similar to the TOS in IPv4 packets.
 - The last 20 bits contain the flow label, indicating to intermediate devices that a packet belongs to a specific stream of packets between a source and destination.
