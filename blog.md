@@ -349,3 +349,21 @@ Introductory networking room of THM's complete beginner course
 - The next 8 bits of the second row is the Next Header, specifying the protocol used such as TCP, UDP, or ICMPv6. It also uses values to indicate the protocol like the protocol field in IPv4. These values are indicated in hex.
 - The last 8 bits is the hop limit, similar to the TTL in IPv4 but more accurately named.
 - The source and destination addresses are the same as in IPv4 but now they each take up 128 bits instead of 32 bits.
+
+
+
+### Day 16
+
+`4/2/22`
+
+- After downloading VirtualBox, you will need an ISO file. I personally downloaded a Kali Linux ISO.
+- Open VirtualBox and select new. Enter a name and select the version, in my case other Linux (64-bit).
+- Click next and change the memory as needed. Select next again and choose create a virtual hard disk now.
+- Select create and choose the VDI option. Press next and click dynamically allocated.
+- Press next again and adjust the storage as needed, then press create.
+- With your new machine selected, press settings and go to the system tab. Select processor, and increase the number of processors to 2 or 3.
+- Press the display button and move the video memory to the maximum. Also select enable 3D acceleration.
+- Go to storage and select the empty disk. On the right, select the small disk icon. Select choose/create a virtual optical disk.
+- Press add and locate the ISO file, click it, and press open. Next, press choose.
+- Go to shared folders and create a new folder. Choose where to put it and exit the settings.
+- Select the virtual machine and press start. The machine will launch and you will have to go through the installation steps.
