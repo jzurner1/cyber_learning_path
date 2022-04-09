@@ -367,3 +367,27 @@ Introductory networking room of THM's complete beginner course
 - Press add and locate the ISO file, click it, and press open. Next, press choose.
 - Go to shared folders and create a new folder. Choose where to put it and exit the settings.
 - Select the virtual machine and press start. The machine will launch and you will have to go through the installation steps.
+
+
+
+### Day 20
+
+`4/8/22`
+
+I've spent most of the day working on the server, and I made some pretty big changes. Most notably, I started over and got rid of FreeNAS in favor or Ubuntu Server with NextCloud. I used a series of tutorial videos from 2017, but most of the information was outdated so I had to figure out most of it by myself.
+
+My original hardware setup was an old PC I had. This worked with FreeNAS, but when I tried to install Ubuntu Server, it gave me a million errors and complained about the CPU. After a dozen forum posts and a couple hours of futile attempts, I switched to a Raspberry Pi which is somehow working pretty well. 2GB of RAM and 32GB of memory is enough to host a basic server. I added in a large flash drive for the boot device and eventually an external hard drive with two terabytes. I have a couple larger SATA hard drives but the Raspberry Pi doesn't have SATA slots so I bought some converters on Amazon; they'll be here by Saturday.
+
+The biggest problem I faced was in the /etc/fstab/ file. If you don't know, it's a sort of disk partitioning configuration file because Linux doesn't automatically partition drives like Windows. My problem was that it is super sensitive to minor errors and will send you to "emergency mode" if you try to boot with one in the file. Because the video I watched was so old, most of the syntax had completely changed and I had to spend a great deal of time finding a working setup. I must have tried thirty different syntaxes, and each attempt required rebooting the entire thing. Fortunately, I finally got it down. Below is the code that I ended with.
+
+**LABEL=writable  /        ext4   discard,errors=remount-ro       0 1
+LABEL=system-boot       /boot/firmware  vfat    defaults        0       1
+
+# Mount for portable drive at /mnt/cloud1
+UUID=77b1163b-becf-43fe-a13c-c7330a860171       /mnt/cloud1     ext4    defaults        0       3
+# mhddfs at /mnt/cloud
+mhddfs#/mnt/cloud1,/mnt/cloud2 /mnt/cloud fuse defaults,allow_other,nonempty 0 0**
+
+Another thing I had a bit of trouble with was setting a static IP address. It's easy to find information online but I have a less-common router, so there were no guides. The router page itself wasn't helpful and I had to dig through a bit to find it. It's pretty cool to see all the settings available though; I'll have to come back to it in a later post.
+ 
+I spent the majority of the day working on the server, and now I finally have a working version. NextCloud definitely does most of the heavy lifting, but I think it'll be fun to set up. I think I may also need to set up an actual database, but I'll save that for another day.
